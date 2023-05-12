@@ -1,5 +1,5 @@
 def max_pairwise_product(numbers):
-    sort = sorted(numbers, reverse=False)
+    sort = sorted(numbers, reverse=True)
     product = sort[0] * sort[1]
     return product
     
