@@ -21,6 +21,7 @@ def lcm1(a, b):
     for l in range(1, a * b + 1):
         if l % a == 0 and l % b == 0:
             break
+        
 
     end_time = time.time()
     return (end_time -start_time), l
