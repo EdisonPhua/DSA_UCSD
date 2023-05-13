@@ -1,9 +1,15 @@
 def lcm(a,b):
     mult = 1
+    list = [a,b]
     while True:
-        number = sort(a,b)
-        number_mult = number * mult
-        if number % 
+        list.sort()
+        larg_number = list[1] * mult
+        if large_number % list[0] ==0:
+            return larg_number 
+            continue
+        else:
+            break
+            
         
 
 
