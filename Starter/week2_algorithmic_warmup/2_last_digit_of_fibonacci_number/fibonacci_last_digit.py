@@ -14,4 +14,3 @@ def fibonacci_last_digit(n):
 if __name__ == '__main__':
     n = int(input())
     print(fibonacci_last_digit(n))
-3

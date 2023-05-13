@@ -2,7 +2,12 @@ def fibonacci_last_digit(n):
     if n <= 1:
         return n
     previous=0
-    current=0
+    current=1
+    for _ in range(n-1):
+        previous, current = current, current+ previous
+    return current
+        
+        
     
 
 
