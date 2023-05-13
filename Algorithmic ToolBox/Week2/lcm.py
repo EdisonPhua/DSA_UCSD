@@ -1,5 +1,5 @@
 import time
-#def lcm(a,b):
+def lcm(a,b):
     start_time = time.time()
     
     mult = 1
