@@ -1,8 +1,8 @@
 def lcm(a,b):
     mult = 1
     list = [a,b]
-    while True:
-        list.sort()
+    list.sort()
+    while True:       
         larg_number = list[1] * mult
         if larg_number % list[0] ==0:
             return larg_number 
