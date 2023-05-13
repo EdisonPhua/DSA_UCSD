@@ -4,11 +4,12 @@ def lcm(a,b):
     while True:
         list.sort()
         larg_number = list[1] * mult
-        if large_number % list[0] ==0:
+        if larg_number % list[0] ==0:
             return larg_number 
-            continue
-        else:
             break
+        else:
+            mult += 1
+            continue
             
         
 
