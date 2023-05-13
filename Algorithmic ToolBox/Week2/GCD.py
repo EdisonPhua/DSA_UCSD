@@ -14,4 +14,9 @@ def gcd(a, b):
 
 if __name__ == "__main__":
     a, b = map(int, input().split())
+    
+    
+    start = time.time()
     print(gcd(a, b))
+    end = time.time()
+    print((end - start)*1000)
