@@ -21,4 +21,11 @@ def fibonacci_number1(n):
 
 if __name__ == '__main__':
     input_n = int(input())
+    start = time.time()
     print(fibonacci_number(input_n))
+    end = time.time()
+    print((end-start)*1000)
+    start = time.time()
+    print(fibonacci_number1(input_n))
+    end = time.time()
+    print((end-start)*1000)
