@@ -2,7 +2,7 @@ import time
 def gcd(a, b):
     list = [a,b]
     list.sort()
-    while b:
+    while list[0]:
         list[1], list[0] = list[0], list[1] % list[0]
     return list[1]
 
