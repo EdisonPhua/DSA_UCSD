@@ -1,3 +1,7 @@
+import time
+
+
+
 def fibonacci_number(n):
     if n <= 1:
         return n
