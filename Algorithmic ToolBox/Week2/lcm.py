@@ -1,7 +1,6 @@
 import time
 def lcm(a,b):
-    start_time = time.time()
-    
+    start_time = time.time() 
     mult = 1
     list = [a,b]
     list.sort()
@@ -11,8 +10,7 @@ def lcm(a,b):
             break
         else:
             mult += 1
-            continue
-        
+            continue   
     end_time = time.time()
     return ((end_time -start_time)*1000), larg_number 
         
