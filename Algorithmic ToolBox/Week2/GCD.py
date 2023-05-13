@@ -1,3 +1,7 @@
+import time
+
+
+
 def gcd(a, b):
     current_gcd = 1
     for d in range(2, min(a, b) + 1):
