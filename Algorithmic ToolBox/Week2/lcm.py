@@ -1,7 +1,7 @@
 def lcm(a,b):
     mult = 1
     while True:
-        number = max(a,b)
+        number = sort(a,b)
         number_mult = number * mult
         if number % 
         
