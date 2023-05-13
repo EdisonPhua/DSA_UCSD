@@ -25,6 +25,7 @@ if __name__ == '__main__':
     print(fibonacci_number(input_n))
     end = time.time()
     print((end-start)*1000)
+    
     start = time.time()
     print(fibonacci_number1(input_n))
     end = time.time()
