@@ -5,7 +5,7 @@ def fibonacci_number(n):
     else:
         a,b = 0,1
         for i in range(2, n+1):
-            a,b = b, (b+a)
+            a,b = b%10, (b+a)%10
         return b%10
     
 def calc_fib_fast(n):
