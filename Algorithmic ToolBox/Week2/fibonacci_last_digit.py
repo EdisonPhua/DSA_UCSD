@@ -5,7 +5,7 @@ def fibonacci_last_digit(n):
     current=1
     for _ in range(n-1):
         previous, current = current, current+ previous
-    return current
+    return current % 10
         
         
     
