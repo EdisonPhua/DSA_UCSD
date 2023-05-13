@@ -20,11 +20,8 @@ def lcm1(a, b):
     start_time = time.time()
     for l in range(1, a * b + 1):
         if l % a == 0 and l % b == 0:
-            break
-        
-
-    end_time = time.time()
-    return (end_time -start_time), l
+            end_time = time.time()
+            return (end_time -start_time), l
     assert False
         
 
