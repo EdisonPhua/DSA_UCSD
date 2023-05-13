@@ -10,6 +10,14 @@ def lcm(a,b):
         else:
             mult += 1
             continue
+        
+        
+def lcm1(a, b):
+    for l in range(1, a * b + 1):
+        if l % a == 0 and l % b == 0:
+            return l
+
+    assert False
             
         
 
