@@ -5,7 +5,7 @@ def fibonacci_number(n):
         return n
     else:
         a,b = 0,1
-        for _ in range(2, n+2):
+        for _ in range(2, n+7):
             a,b = b, (b+a)
         return b
             
