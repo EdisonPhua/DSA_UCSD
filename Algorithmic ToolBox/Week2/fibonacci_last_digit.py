@@ -1,14 +1,16 @@
-
-def fibonacci_number(n):
+def fibonacci_last_digit(n):
     if n <= 1:
         return n
-    else:
-        a,b = 0,1
-        for _ in range(2, n+1):
-            a,b = b, (b+a)
-        return b
+    previous=0
+    current=1
+    for _ in range(n-1):
+        previous, current = current, current+ previous
+    return current % 10
+        
+        
+    
 
 
 if __name__ == '__main__':
-    input_n = int(input())
-    print(fibonacci_number(input_n))
+    n = int(input())
+    print(fibonacci_last_digit(n))
