@@ -1,5 +1,5 @@
 import time
-def lcm(a,b):
+#def lcm(a,b):
     start_time = time.time()
     
     mult = 1
@@ -8,14 +8,13 @@ def lcm(a,b):
     while True:       
         larg_number = list[1] * mult
         if larg_number % list[0] ==0:
-            return larg_number 
             break
         else:
             mult += 1
             continue
         
     end_time = time.time()
-    return ( end_time -start_time )
+    return (end_time -start_time), larg_number 
         
 def lcm1(a, b):
     start_time = time.time()
@@ -25,7 +24,7 @@ def lcm1(a, b):
 
     assert False
     end_time = time.time()
-    return ( end_time -start_time )
+    return (end_time -start_time), l
         
 
 
