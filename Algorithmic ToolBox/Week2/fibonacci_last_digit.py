@@ -6,7 +6,7 @@ def fibonacci_number(n):
         a,b = 0,1
         for _ in range(2, n+1):
             a,b = b, (b+a)
-        return b
+        return b%10
 
 
 if __name__ == '__main__':
