@@ -7,7 +7,7 @@ def fibonacci_huge_naive(n,m):
     else:
         a,b = 0,1
         for i in range(2, n+1):
-            a,b = b, (b+a)
+            a,b = b%m, (b+a)%m
         return b%m
 
 
