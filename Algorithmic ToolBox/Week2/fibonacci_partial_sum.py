@@ -1,5 +1,5 @@
 # Uses python3
-import sys
+import sys, time
 
 def fibonacci_partial_sum_naive(from_, to):
     _sum = 0
@@ -32,3 +32,13 @@ if __name__ == '__main__':
     print(fibonacci_partial_sum_naive(from_, to))
 
 
+    start = time.time()
+    print(fibonacci_partial_sum_naive(from_, to))
+    end = time.time()
+    print((end - start)*1000)
+    
+    start = time.time()
+    print(fibonacci_partial_sum_naive1(from_, to))
+    end = time.time()
+    print((end - start)*1000)
+    
