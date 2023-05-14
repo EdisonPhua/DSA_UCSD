@@ -7,7 +7,7 @@ def fibonacci_sum(n):
         for i in range(2, n+1):
             a,b = b%10, (b+a)%10
             sum += b
-        return sum%10
+    return sum%10
 
 if __name__ == '__main__':
     n = int(input())
