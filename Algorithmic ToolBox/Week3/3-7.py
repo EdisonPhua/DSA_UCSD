@@ -10,11 +10,12 @@ def IsBetter(a,b):
 def largest_number_naive(numbers):
     numbers = list(map(str, numbers))
 
-    largest = 0
+    largest = []
 
     for permutation in permutations(numbers):
+        
         if IsBetter("".join(permutation)):
-            largest
+            largest.append(permutation)
 
     return largest
 
