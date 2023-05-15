@@ -4,18 +4,11 @@ from sys import stdin
 def optimal_value(capacity, weights, values):
     value = 0.
     
-    
-    # write your code here
-    if capacity==0 or weights == None:
-        return 0
-    max_index = values.index(max(values))
-    amount = min(capacity, weights[max_index])
-    value = values[max_index] * ( amount/weights[max_index] )
-    del values[max_index]
-    value += value + optimal_value(capacity, weights, values)
-    
-    
-    return value
+    val = []
+    n = len(weights)
+    for i in range(n):
+        val.append((values[i]/weights[i], weights[i]))
+    val.sort(reverse=True) #index 0 will be the highest cost
 
 
 if __name__ == "__main__":
