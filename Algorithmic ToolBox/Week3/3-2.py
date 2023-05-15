@@ -15,6 +15,11 @@ def optimal_value(capacity, weights, values):
         if capacity> val[i][1]:
             value += val[i][0]*val[i][1]
             capacity -= val[i][1]
+        else:
+            value += val[i][0]*capacity
+            capacity = 0
+        i += 1
+    return value
 
 
 if __name__ == "__main__":
