@@ -13,7 +13,7 @@ def largest_number_naive(numbers):
     largest = 0
 
     for permutation in permutations(numbers):
-        largest = max(largest, IsBetter(permutation))
+        largest = max(largest, IsBetter(int(permutation)))
 
     return largest
 
