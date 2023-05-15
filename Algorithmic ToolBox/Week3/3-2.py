@@ -3,8 +3,14 @@ from sys import stdin
 
 def optimal_value(capacity, weights, values):
     value = 0.
+    
+    
     # write your code here
-
+    
+    
+    
+    
+    
     return value
 
 
