@@ -8,7 +8,9 @@ def optimal_value(capacity, weights, values):
     # write your code here
     if capacity==0 or weights == None:
         return 0
-    
+    max_index = values.index(max(values))
+    amount = min(capacity, weights[max_index])
+    value = value[max_index] * (amount/weights[max_index])
     
     
     
