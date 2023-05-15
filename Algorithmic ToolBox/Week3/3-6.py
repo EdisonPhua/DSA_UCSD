@@ -2,7 +2,7 @@ def optimal_summands(n):
     summands = []
     # write your code here
     current_numer = 1
-    while n>0:
+    while n > 2 * current_number:
         summands.append(current_numer)
         
         n -= current_numer
