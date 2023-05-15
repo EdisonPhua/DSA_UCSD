@@ -6,7 +6,8 @@ def optimal_value(capacity, weights, values):
     
     
     # write your code here
-    
+    if capacity==0 or weights == None:
+        return 0
     
     
     
