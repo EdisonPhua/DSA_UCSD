@@ -6,7 +6,7 @@ def optimal_summands(n):
             summands.append(n)
             return summands
         summands.append(i)
-        n -= 1
+        n -= i
         
     return summands
 
