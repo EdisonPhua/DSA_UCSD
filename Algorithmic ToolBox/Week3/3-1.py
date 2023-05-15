@@ -1,18 +1,14 @@
 def change(money):
     # write your code here
-    numCoins = 0
-    
-    while money>=0:
+    numCoins = 0   
+    while not money==0:
         if money >= 10:
             money -= 10                     
         elif money >=5:
             money -= 5                    
         else:
             money -= 1
-        numCoins += 1
-            
-
-        
+        numCoins += 1   
     return numCoins
 
 
