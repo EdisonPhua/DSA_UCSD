@@ -1,5 +1,11 @@
 from itertools import permutations
-
+def IsBetter(a,b):
+    a,b = str(a) , str(b)
+    
+    if int((a+b)) > int(b+a):
+        return int((a+b))
+    else:
+        return int(b+a)
 
 def largest_number_naive(numbers):
     numbers = list(map(str, numbers))
@@ -7,7 +13,7 @@ def largest_number_naive(numbers):
     largest = 0
 
     for permutation in permutations(numbers):
-        largest = max(largest, int("".join(permutation)))
+        largest = max(largest, IsBetter(permutation))
 
     return largest
 
