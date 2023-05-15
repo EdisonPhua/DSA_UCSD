@@ -5,7 +5,7 @@ Segment = namedtuple('Segment', 'start end')
 
 def optimal_points(segments):
     points = []
-    segments.sort()
+    segments.sort(key=lambda x: (x[0], -x[1]))
     # write your code here
     for segment in segments:
         left, right = segment
