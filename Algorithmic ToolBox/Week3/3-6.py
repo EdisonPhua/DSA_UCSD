@@ -1,6 +1,13 @@
 def optimal_summands(n):
     summands = []
     # write your code here
+    for i in range( 1, 4):
+        if i == 3:
+            summands.append(n)
+            return summands
+        summands.append(i)
+        n -= 1
+        
     return summands
 
 
