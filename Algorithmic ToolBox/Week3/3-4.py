@@ -7,7 +7,7 @@ def max_dot_product(first_sequence, second_sequence):
     second_sequence.sort(reverse=True)
     for permutation in permutations(second_sequence):
         dot_product = sum(first_sequence[i] * permutation[i] for i in range(len(first_sequence)))
-        max_product += dot_product
+        max_product =  max(max_product, dot_product)
 
     return max_product
 
