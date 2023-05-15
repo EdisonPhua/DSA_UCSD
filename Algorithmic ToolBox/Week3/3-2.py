@@ -10,7 +10,7 @@ def optimal_value(capacity, weights, values):
         return 0
     max_index = values.index(max(values))
     amount = min(capacity, weights[max_index])
-    value = value[max_index] * (amount/weights[max_index])
+    value = values[max_index] * ( amount/weights[max_index] )
     del values[max_index]
     value += value + optimal_value(capacity, weights, values)
     
