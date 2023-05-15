@@ -3,9 +3,9 @@ def IsBetter(a,b):
     a,b = str(a) , str(b)
     
     if int((a+b)) > int(b+a):
-        return int((a+b))
+        return True
     else:
-        return int(b+a)
+        return False
 
 def largest_number_naive(numbers):
     numbers = list(map(str, numbers))
@@ -13,7 +13,8 @@ def largest_number_naive(numbers):
     largest = 0
 
     for permutation in permutations(numbers):
-        largest = max(largest, IsBetter(int(permutation)))
+        if IsBetter("".join(permutation)):
+            largest
 
     return largest
 
