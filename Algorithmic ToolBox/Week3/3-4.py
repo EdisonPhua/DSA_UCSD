@@ -1,14 +1,15 @@
-from itertools import permutations
+
 
 
 def max_dot_product(first_sequence, second_sequence):
     max_product = 0
     first_sequence.sort(reverse=True)
     second_sequence.sort(reverse=True)
-    for permutation in permutations(second_sequence):
-        dot_product = sum(first_sequence[i] * permutation[i] for i in range(len(first_sequence)))
-        max_product =  max(max_product, dot_product)
-
+    for i in range(len(first_sequence)):
+        dot_product = first_sequence[i] * second_sequence[i]
+        max_product += dot_product
+        
+    max_product =  max(max_product, dot_product)
     return max_product
 
 
