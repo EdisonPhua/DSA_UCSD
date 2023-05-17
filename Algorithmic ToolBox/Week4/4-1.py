@@ -1,10 +1,10 @@
 def binary_search(keys, query):
     # write your code here
-    for index, key in enumerate(keys):
-        if query == key:
-            return index
-    else:
-        return -1
+    minIndex = keys[0]
+    maxIndex = keys[-1]
+    mid = (minIndex +maxIndex)/2
+    
+    
         
 
 
