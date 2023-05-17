@@ -4,7 +4,10 @@ from random import randint
 def partition3(array, left, right):
     # write your code here
     pivot_array = [array[0] , array[-1], array[(len(array//2))]]
-    pivot = pivot_array.sorted()[1]
+    pivot_array.sort()
+    pivot = pivot_array[1]
+    
+    
 
 
 def randomized_quick_sort(array, left, right):
