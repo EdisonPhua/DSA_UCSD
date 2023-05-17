@@ -1,7 +1,7 @@
 def majority_element_naive(elements):
     total = len(elements)
     for e in elements:
-        if elements.count(e) > len(elements) / 2:
+        if elements.count(e) > total / 2:
             return 1
 
     return 0
