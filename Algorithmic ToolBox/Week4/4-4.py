@@ -3,9 +3,15 @@ from random import randint
 
 def partition3(array, left, right):
     # write your code here
-    pivot_array = [array[0] , array[-1], array[(len(array//2))]]
-    pivot_array.sort()
-    pivot = pivot_array[1]
+    pivot = array[left]
+    m1 = left
+    m2 = right
+    i = left + 1
+    while i <= m2:
+        if array[i] < pivot:
+            array[i], array[m1] = array[m1], array[i]
+            
+    
     
     
 
