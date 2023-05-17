@@ -4,7 +4,7 @@ def majority_element_naive(elements):
     
     for number in elements:
         if count == 0:
-            candidate == number
+            candidate = number
             count += 1
         elif number == candidate:
             count += 1
