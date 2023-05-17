@@ -3,8 +3,15 @@ def majority_element_naive(elements):
     candidate = None
     
     for number in elements:
-        if not candidate:
+        if count == 0:
             candidate == number
+            count += 1
+        elif number == candidate:
+            count += 1
+        else:
+            count -= 1
+            
+    return count
         
 
 
