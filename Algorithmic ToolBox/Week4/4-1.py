@@ -1,8 +1,9 @@
 def binary_search(keys, query):
     # write your code here
-    for key in keys:
+    for index, key in enumerate(keys):
         if query == key:
-            return 
+            return index
+        
 
 
 
