@@ -8,7 +8,7 @@ def partition3(array, left, right):
         if array[i] < pivot:
             left += 1
             array[left], array[i] = array[i] , array[left]
-     
+    pivot , array[left] = array[left], pivot 
             
     
     
