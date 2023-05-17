@@ -7,7 +7,7 @@ def binary_search(keys, query):
     while maxIndex >= minIndex:
         mid =  round((minIndex +maxIndex)/2)
         if keys[mid] == query:
-            return query
+            return mid
         elif keys[mid] <  query:
             minIndex = mid + 1
         elif keys[mid] > query:
