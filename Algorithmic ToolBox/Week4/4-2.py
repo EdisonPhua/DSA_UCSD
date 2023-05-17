@@ -3,18 +3,22 @@ def binary_search(keys, query):
     # write your code here
     minIndex = 0
     maxIndex = len(keys) - 1
-    
+    first_occurance = None
     
     while maxIndex >= minIndex:
         mid =  int((minIndex +maxIndex)//2)
         if keys[mid] == query:
-            return mid
+            first_occurance = mid
+            maxIndex = mid - 1
+            
         elif keys[mid] <  query:
             minIndex = mid + 1
         elif keys[mid] > query:
             maxIndex = mid - 1
-    return -1
-
+    if not first_occurance:
+        return first_occurance
+    else:
+        return -1
 
 if __name__ == '__main__':
     num_keys = int(input())
