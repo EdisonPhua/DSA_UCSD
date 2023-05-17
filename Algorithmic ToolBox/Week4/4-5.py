@@ -17,7 +17,7 @@ def count_inversions(array):
     right, inv_right = count_inversions(array[mid:])
     merged, inv_merge = merge_and_count(left, right)
 
-    return merged, inv_left + inv_right + inv_merge
+    return inv_left + inv_right + inv_merge
 
 
 def merge_and_count(left, right):
