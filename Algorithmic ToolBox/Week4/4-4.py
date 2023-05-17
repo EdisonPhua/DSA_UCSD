@@ -2,15 +2,24 @@ from random import randint
 
 
 def partition3(array, left, right):
-    # write your code here
     pivot = array[left]
-    for i in range(left+1, right):
-        if array[i] <= pivot:
-            left += 1
-            array[left], array[i] = array[i] , array[left]
-    pivot , array[left] = array[left], pivot 
-    
-    return array[left], array[right]
+    m1 = left
+    m2 = right
+    i = left + 1
+
+    while i <= m2:
+        if array[i] < pivot:
+            array[i], array[m1] = array[m1], array[i]
+            m1 += 1
+            i += 1
+        elif array[i] > pivot:
+            array[i], array[m2] = array[m2], array[i]
+            m2 -= 1
+        else:
+            i += 1
+
+    return m1, m2
+
             
     
     
