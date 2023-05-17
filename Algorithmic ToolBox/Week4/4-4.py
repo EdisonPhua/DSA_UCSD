@@ -4,6 +4,12 @@ from random import randint
 def partition3(array, left, right):
     # write your code here
     pivot = array[left]
+    for i in range(left+1, right):
+        if array[i] < pivot:
+            left += 1
+            array[left], array[i] = array[i] , array[left]
+     
+            
     
     
     
