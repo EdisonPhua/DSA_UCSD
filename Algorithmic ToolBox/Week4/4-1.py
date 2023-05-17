@@ -1,11 +1,11 @@
 def binary_search(keys, query):
     # write your code here
     minIndex = 0
-    maxIndex = len(keys)
+    maxIndex = len(keys) - 1
     
     
     while maxIndex >= minIndex:
-        mid =  round((minIndex +maxIndex)/2)
+        mid =  int((minIndex +maxIndex)//2)
         if keys[mid] == query:
             return mid
         elif keys[mid] <  query:
