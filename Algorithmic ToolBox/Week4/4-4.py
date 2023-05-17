@@ -5,10 +5,12 @@ def partition3(array, left, right):
     # write your code here
     pivot = array[left]
     for i in range(left+1, right):
-        if array[i] < pivot:
+        if array[i] <= pivot:
             left += 1
             array[left], array[i] = array[i] , array[left]
     pivot , array[left] = array[left], pivot 
+    
+    return array[left], array[right]
             
     
     
