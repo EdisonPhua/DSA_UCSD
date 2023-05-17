@@ -2,7 +2,7 @@ def majority_element_naive(elements):
     total = len(elements)
     unique = set(elements)
     for num in unique:
-        if elements.count(e) > total / 2:
+        if elements.count(num) > total / 2:
             return 1
 
     return 0
