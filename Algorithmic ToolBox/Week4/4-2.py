@@ -9,17 +9,15 @@ def binary_search(keys, query):
         mid =  int((minIndex +maxIndex)//2)
         if keys[mid] == query:
             first_occurance = mid
-            maxIndex = mid - 1
-            
+            maxIndex = mid - 1            
         elif keys[mid] <  query:
             minIndex = mid + 1
         elif keys[mid] > query:
             maxIndex = mid - 1
     if not first_occurance:
+         return -1
+    else:      
         return first_occurance
-    else:
-        return -1
-
 if __name__ == '__main__':
     num_keys = int(input())
     input_keys = list(map(int, input().split()))
