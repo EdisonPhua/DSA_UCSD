@@ -12,7 +12,7 @@ def binary_search(keys, query):
             minIndex = mid - 1            
         elif keys[mid] <  query:
             minIndex = mid + 1
-        elif keys[mid] > query:
+        else:
             maxIndex = mid - 1
     if not last_occurance:
          return -1
