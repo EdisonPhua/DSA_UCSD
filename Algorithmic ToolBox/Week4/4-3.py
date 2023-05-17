@@ -1,11 +1,11 @@
 def majority_element_naive(elements):
-    total = len(elements)
-    unique = set(elements)
-    for num in unique:
-        if elements.count(num) > total / 2:
-            return 1
-
-    return 0
+    count = 0 
+    candidate = None
+    
+    for number in elements:
+        if not candidate:
+            candidate == number
+        
 
 
 if __name__ == '__main__':
